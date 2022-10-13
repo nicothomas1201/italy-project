@@ -11,7 +11,8 @@ const GlobalSyles = createGlobalStyle`
     --body-12-regular: 400 0.75rem/normal Inter; 
     --body-10-regular: 400 0.625rem/1rem Inter; 
     --body-24-regular: 400 1.5rem/normal Inter; 
-    --paragraph-12: 400 0.8125rem/1.5rem Inter;  
+    --paragraph-12: 400 0.8125rem/1.5rem Inter; 
+    --buttonBG: #1C1B1B; 
   }
 
   body{
