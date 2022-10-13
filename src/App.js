@@ -1,22 +1,36 @@
-import Icon from './components/icons'
-import Button from './components/Button'
 import Layout from './components/Layout'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import BrowseByCategory from './BrowseByCategory'
+import { useState, useEffect } from 'react'
+import { DB } from './assets/db'
+import HeroProduct from './Hero-product'
+import ProductsList from './Products-list'
+import HeroImg from './components/Hero-img'
+import SectionBlogs from './components/Section-blogs'
 
 function App() {
+  let [ db, setDB ] = useState(null)
+
+  useEffect(() => {
+    if(DB){
+      return setDB(DB)
+    }
+    return console.log('loading')
+
+  }, [])
+
   return (
     <>
       <Header />
       <Hero url="./images/hero.png"/>
-      {/* <Icon name="menu" />
-      <Icon name="close" />
-      <Icon name="search" />
-      <Button text="Shop Pendants"/>
-      <Button 
-      text="Shop Pendants"
-      primary={false}/> */}
-
+      <Layout>
+        <BrowseByCategory db={ db } />
+        <HeroProduct db={ db } />
+        <ProductsList db={ db } />
+        <HeroImg url="./images/random.png" />
+        <SectionBlogs blogs={db.blogs}/>
+      </Layout>
     </>
     
   )

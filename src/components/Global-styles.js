@@ -4,6 +4,7 @@ const GlobalSyles = createGlobalStyle`
   :root{
     --black: #1c1b1b; 
     --white: #ffffff; 
+    --background: #F1F1F1;
     --logo: 400 1.4375rem/1.5rem 'Bebas Neue'; 
     --body-16-regular: 400 1rem/1rem Inter; 
     --body-13-regular: 400 0.8125rem/normal Inter; 
@@ -19,6 +20,7 @@ const GlobalSyles = createGlobalStyle`
     margin: 0;
     font: var(--body-16-regular);
     color: var(--black);
+    background: var(--background);
   }
 `
 
