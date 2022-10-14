@@ -5,7 +5,7 @@ const HeroStyled = styled.div`
   /* inline-size: 100vw; */
   block-size: 30.8125rem;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
 `

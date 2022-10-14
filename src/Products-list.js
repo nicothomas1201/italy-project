@@ -15,11 +15,19 @@ const ProductsListStyled = styled.div`
 
   .products-list{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     gap: 3rem;
     padding-block-end: 8rem;
+  }
+
+  @media screen and (min-width: 590px){
+    .products-list{
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
 `

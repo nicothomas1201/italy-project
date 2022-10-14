@@ -8,6 +8,9 @@ const HeroProductStyled = styled.div`
   padding-block-end: 4.8125rem;
   padding-block-start: 4.8125rem;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 5rem;
 
 
@@ -96,13 +99,9 @@ const HeroProductStyled = styled.div`
     }
   }
 
-
-
-
-  
-
-  
-
+  @media screen and (min-width: 728px){
+    flex-direction: row;
+  }
 `
 
 function HeroProduct({ db }) {

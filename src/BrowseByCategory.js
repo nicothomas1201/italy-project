@@ -6,14 +6,23 @@ const BrowseByCategoryStyled = styled.div`
   padding-block-end: 4rem;
   .category{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  @media screen and (min-width: 622px){
     justify-content: space-between;
+    .title{
+      margin-block: 4rem;
+    }
   }
 
   .title{
     font: var(--body-13-regular);
     text-transform: uppercase;
     text-align: center;
-    margin-block: 4rem;
+    margin-block: 1rem;
   }
 `
 

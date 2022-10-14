@@ -1,9 +1,14 @@
 import styled from 'styled-components'
 
 const LayoutStyled = styled.div`
-  max-inline-size: 79.125rem;
-  inline-size: 100%;
-  margin: auto;
+  margin-inline: 2rem;
+  
+  @media screen and (min-width: 877px){
+    max-inline-size: 79.125rem;
+    inline-size: 100%;
+    margin: auto;
+
+  }
 `
 
 function Layout({children}) {
