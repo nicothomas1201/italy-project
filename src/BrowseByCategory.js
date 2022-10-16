@@ -11,12 +11,7 @@ const BrowseByCategoryStyled = styled.div`
     gap: 2rem;
   }
 
-  @media screen and (min-width: 622px){
-    justify-content: space-between;
-    .title{
-      margin-block: 4rem;
-    }
-  }
+ 
 
   .title{
     font: var(--body-13-regular);
@@ -24,6 +19,17 @@ const BrowseByCategoryStyled = styled.div`
     text-align: center;
     margin-block: 1rem;
   }
+
+  @media screen and (min-width: 622px){
+  justify-content: space-between;
+  .title{
+    margin-block: 4rem;
+  }
+
+  .category{
+    flex-wrap: nowrap;
+  }
+}
 `
 
 function BrowseByCategory({db}) {
